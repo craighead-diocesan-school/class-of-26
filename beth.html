@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beth Savage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Klee+One&display=swap" rel="stylesheet">
 </head>
 <body>
  <header>
@@ -13,25 +16,78 @@
     <a href="index.html"> Home</a>
     <a href="neve.html">Neve</a>
     <a href="isha.html">Isha</a>
-    <a href="beth.html">Beth</a>
+    <a class="active" href="beth.html">Beth</a>
     <a href="eva.html">Eva</a>
     <a href="yuna.html">Yuna</a>
     <a href="azu.html">Azu</a>
     <a href="miglia.html">Miglia</a>
-</nav>
-<main>
-<p>
- I am a year 11 student at Craighead. I play violin and piano, dance and love math. I love having game nights with Miglia and Hannah even though they rig Uno Flip against me. In my spare time (not that I have much now we have a puppy) I like to read and do puzzles, I can complete a puzzle in just one weekend if I’ve done it before.
-</p>
-</main>
-<footer>
-<p>&copy Beth Savage Craighead 2024</p>
-</footer>
-<style>
+ </nav>
+ <main>
+ <p>
+  I am a year 11 student at Craighead. I play violin and piano, dance and love math. I love having game nights with Miglia and Hannah even though they rig Uno Flip against me. In my spare time (not that I have much now we have a puppy) I like to read and do puzzles, I can complete a puzzle in just one weekend if I’ve done it before.
+ </p>
+ <h2> My projects</h2>
+ <ul>
+    <li>Intoduction</li>
+    <li>My summer</li>
+    <li>Why Web Dev</li>
+ </ul>
+ </main>
+ <footer>
+ <p>&copy Beth Savage Craighead 2024</p>
+ </footer>
+ <style>
    footer{ 
     text-align: center;
     background-color: lightgray; 
+    grid-area: f;
     }
-</style>
+   header{
+    font-family: "Klee One", cursive;
+    text-align: center;
+    background: #95fff2;
+    padding: 5px;
+    color: #0500FF;
+    grid-area: h;
+    }
+    body{
+        margin:0em;
+        display: grid;
+    grid: " h    h    h  " 20vh
+          " n    m    .  " 70vh
+          " f    f    f  " 10vh
+          / 1fr  5fr  1fr;
+    }
+    nav{
+     background: #95fff2;
+     padding-left: 10px;
+     padding-right: 10px;
+     grid-area: n;
+    }
+    a{
+     display: flex;
+     color: #0500FF; 
+     font-family: fuzzy bubbles;
+     text-decoration: none;
+     border: 1px solid #0500FF;
+     border-radius: 2em;
+     margin-top: 15px;
+     padding-left: 50px;
+    }
+    a:hover{
+        border: 1px solid #95fff2;
+        color: #95fff2;
+        background: #0500FF;
+    }
+    .active{
+        border: 1px solid #95fff2;
+        color: #95fff2;
+        background: #0500FF;
+    }
+    main{
+     margin-left: 15px;
+     grid-area: m;
+    }
+ </style>
 </body>
 </html>
