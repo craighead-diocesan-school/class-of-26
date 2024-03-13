@@ -12,8 +12,8 @@
   <body>
     <header>
       <h1>Neve</h1>
-      <h1>Gaffaney</h1>
-      <h2>Digi Profile</h2>
+      <h2>Gaffaney</h2>
+      <h3>Digi Profile</h3>
     </header>
 
     <nav>
@@ -31,22 +31,33 @@
         background-color: #f15b5b;
         color: white;
         font-family: "Julius Sans One", sans-serif;
+        text-align: center;
       }
 
       a {
-        background-color: #be9393;
+        background-color: #f15b5b;
         font-family: "Julius Sans One", sans-serif;
         border-radius: 0.75em;
-        padding-left: 1.5em;
-        padding-right: 2em;
         display: grid;
+        text-decoration: none;
+        color: white;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 60px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #be9393;
+        width: 75px;
       }
 
       body {
         display: grid;
         grid:
-          " n    h    .  " 11em
-          " n    h   .  " auto
+          " n    n    . " 11em
+          " h    h    .   " auto
           " .    m    m  " auto
           " .    .    f  " 5em
           / 1fr 1fr 3fr;
