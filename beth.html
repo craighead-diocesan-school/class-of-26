@@ -16,7 +16,7 @@
     <a href="index.html"> Home</a>
     <a href="neve.html">Neve</a>
     <a href="isha.html">Isha</a>
-    <a href="beth.html">Beth</a>
+    <a class="active" href="beth.html">Beth</a>
     <a href="eva.html">Eva</a>
     <a href="yuna.html">Yuna</a>
     <a href="azu.html">Azu</a>
@@ -62,6 +62,25 @@
      background: #95fff2;
      padding: 2px;
      grid-area: n;
+    }
+    a{
+     display: flex;
+     font-family: fuzzy bubbles;
+     text-decoration: none;
+     border: 1px solid #0500FF;
+     border-radius: 2em;
+     margin: 1px;
+     padding-left: 15px;
+    }
+    a:hover{
+        border: 1px solid #95fff2;
+        color: #95fff2;
+        background: #0500FF;
+    }
+    .active{
+        border: 1px solid #95fff2;
+        color: #95fff2;
+        background: #0500FF;
     }
     main{
      margin-left: 15px;
