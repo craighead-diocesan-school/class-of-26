@@ -26,42 +26,124 @@
       <a href="miglia.html">Miglia</a>
     </nav>
 
-    <style>
-      header {
-        background-color: #f15b5b;
-        color: white;
-        font-family: "Julius Sans One", sans-serif;
-        text-align: center;
-      }
+    <main>
+      <p>I am Currently a Year 11 Student attending Craighead Diocesan School, who takes digi tech.</p>
+      <p>Interesting stuff about me:</p>
 
-      a {
-        background-color: #f15b5b;
-        font-family: "Julius Sans One", sans-serif;
-        border-radius: 0.75em;
-        display: grid;
-        text-decoration: none;
-        color: white;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        width: 60px;
-        text-align: center;
-      }
+      <li>I play the drums</li>
+      <li>I love watching movies and television shows</li>
+      <li>I play badminton</li>
+      <li>I love cars and Formula 1</li>
+    </main>
 
-      nav {
-        background-color: #be9393;
-        width: 75px;
-      }
+    <footer>
+      <p>Hello</p>
+    </footer>
 
-      body {
-        display: grid;
-        grid:
-          " n    n    . " 11em
-          " h    h    .   " auto
-          " .    m    m  " auto
-          " .    .    f  " 5em
-          / 1fr 1fr 3fr;
-      }
-    </style>
+    <div class="first-image">
+      <img src="Neve-first-img.png" />
+    </div>
+
+    <div class="two-images">
+      <img src="Neve-second-img.png" />
+      <img src="Neve-third-img.png" />
+    </div>
+
+    <div class="projects">
+      <p>My Projects</p>
+      <div class="vl"></div>
+    </div>
+
+    <div class="bottom-images">
+      <p>hello</p>
+    </div>
+
+    <div class="divider">
+      <p>hello</p>
+    </div>
   </body>
+  <style>
+    header {
+      background-color: #f15b5b;
+      color: white;
+      font-family: "Julius Sans One", sans-serif;
+      text-align: center;
+      grid-area: h;
+    }
+
+    a {
+      background-color: #f15b5b;
+      font-family: "Julius Sans One", sans-serif;
+      border-radius: 0.75em;
+      display: grid;
+      text-decoration: none;
+      color: white;
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 60px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #be9393;
+      grid-area: n;
+    }
+
+    main {
+      grid-area: m;
+      background-color: white;
+    }
+
+    footer {
+      grid-area: f;
+      background-color: #f15b5b;
+    }
+
+    .first-image {
+      grid-area: i;
+    }
+
+    .two-images {
+      grid-area: t;
+    }
+
+    .projects {
+      grid-area: p;
+      background-color: white;
+      font-family: "Julius Sans One", sans-serif;
+      text-align: center;
+    }
+
+    .bottom-images {
+      grid-area: b;
+      background-color: red;
+    }
+
+    .divider {
+      grid-area: d;
+      background-color: #f15b5b;
+    }
+
+    .vl {
+      margin-left: 100px;
+      border-left: 6px solid black;
+      height: 100px;
+    }
+
+    body {
+      display: grid;
+      grid:
+        " i    n    h  " auto
+        " t    t    h  " auto
+        " t    t    p  " auto
+        " t    t    p  " auto
+        " d    d    d  " auto
+        " .    .    .  " auto
+        " m    m    b  " auto
+        " .    .    .  " auto
+        " f    f    f  " auto
+        / 3fr 2fr 4fr;
+    }
+  </style>
 </html>
