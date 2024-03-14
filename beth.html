@@ -26,8 +26,9 @@
  <p>
   I am a year 11 student at Craighead. I play violin and piano, dance and love math. I love having game nights with Miglia and Hannah even though they rig Uno Flip against me. In my spare time (not that I have much now we have a puppy) I like to read and do puzzles, I can complete a puzzle in just one weekend if I’ve done it before.
  </p>
- <h2> My projects</h2>
+ <img src="Beth-Image.jpeg">
  <ul>
+    <h2> My projects</h2>
     <li>Intoduction</li>
     <li>My summer</li>
     <li>Why Web Dev</li>
@@ -49,6 +50,7 @@
     padding: 5px;
     color: #0500FF;
     grid-area: h;
+    font-size: 25px;
     }
     body{
         margin:0em;
@@ -84,7 +86,24 @@
         color: #95fff2;
         background: #0500FF;
     }
-    main{
+    ul{
+        grid-area: u;
+      }
+      p{
+      grid-area: p;
+      }
+      img{
+        width: 200px;
+        grid-area: i;
+      }
+    main{   
+    display: grid;
+        grid:
+          " p    p    .    i" auto
+          " p    p    .    i" auto
+          " .    u    u    ." auto
+          " .    .    .    ." auto
+          / auto auto auto auto;
      margin-left: 15px;
      grid-area: m;
     }
