@@ -32,7 +32,6 @@
     <main>
       <p>I am Currently a Year 11 Student attending Craighead Diocesan School, who takes digi tech.</p>
       <p>Interesting stuff about me:</p>
-
       <ul>
         <li>I play the drums</li>
         <li>I love watching movies and television shows</li>
@@ -86,28 +85,30 @@
     a {
       background-color: #f15b5b;
       font-family: "Julius Sans One", sans-serif;
-      border-radius: 0.75em;
+      border-radius: 1em;
       display: grid;
       text-decoration: none;
       color: white;
-      margin-top: 10px;
-      margin-left: 10px;
-      margin-right: 10px;
-      width: 120px;
-      height: 40px;
+      margin-top: 15px;
+      margin-right: 20px;
+      width: 180px;
+      height: 50px;
       text-align: center;
-      font-size: xx-large;
+      font-size: xxx-large;
     }
 
     nav {
       background-color: #be9393;
       grid-area: n;
-      align-items: center;
     }
 
     main {
       grid-area: m;
       background-color: white;
+      font-family: "Judson", serif;
+      font-size: xx-large;
+      padding-left: 50px;
+      padding-top: 20px;
     }
 
     footer {
@@ -134,6 +135,7 @@
       font-family: "Julius Sans One", sans-serif;
       text-align: center;
       font-size: xxx-large;
+      color: black;
     }
 
     .bottom-images {
@@ -149,25 +151,21 @@
 
     .vl {
       margin-left: 100px;
-      margin-top: 50px;
+      margin-top: 70px;
       border-left: 6px solid black;
       height: 100px;
-      margin-left: 240px;
+      margin-left: 330px;
     }
 
     body {
       display: grid;
       grid:
-        " i    n    h  " auto
-        " t    t    p  " auto
-        " t    t    p  " auto
-        " .    .    .  " auto
+        " i    n    h  " 35em
+        " t    p    p  " auto
         " d    d    d  " auto
-        " .    .    .  " auto
         " m    m    b  " auto
-        " .    .    .  " auto
         " f    f    f  " auto
-        / 3fr 2fr 4fr;
+        / 2fr 2fr 4fr;
     }
   </style>
 </html>
