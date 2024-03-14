@@ -8,6 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -30,14 +33,16 @@
       <p>I am Currently a Year 11 Student attending Craighead Diocesan School, who takes digi tech.</p>
       <p>Interesting stuff about me:</p>
 
-      <li>I play the drums</li>
-      <li>I love watching movies and television shows</li>
-      <li>I play badminton</li>
-      <li>I love cars and Formula 1</li>
+      <ul>
+        <li>I play the drums</li>
+        <li>I love watching movies and television shows</li>
+        <li>I play badminton</li>
+        <li>I love cars and Formula 1</li>
+      </ul>
     </main>
 
     <footer>
-      <p>Hello</p>
+      <p>&copy Neve Gaffaney 2024</p>
     </footer>
 
     <div class="first-image">
@@ -50,12 +55,18 @@
     </div>
 
     <div class="projects">
-      <p>My Projects</p>
+      <div class="vl"></div>
+      <p>My Projects FOR 2024</p>
+      <div class="vl"></div>
+      <p>Introduction</p>
+      <p>Summer</p>
+      <p>Why Web Dev?</p>
       <div class="vl"></div>
     </div>
 
     <div class="bottom-images">
-      <p>hello</p>
+      <img src="Neve-first-bottom-img.png" />
+      <img src="Neve-second-bottom-img.png" />
     </div>
 
     <div class="divider">
@@ -69,6 +80,7 @@
       font-family: "Julius Sans One", sans-serif;
       text-align: center;
       grid-area: h;
+      font-size: xxx-large;
     }
 
     a {
@@ -78,16 +90,19 @@
       display: grid;
       text-decoration: none;
       color: white;
-      margin-top: 5px;
-      margin-left: 5px;
-      margin-right: 5px;
-      width: 60px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 120px;
+      height: 40px;
       text-align: center;
+      font-size: xx-large;
     }
 
     nav {
       background-color: #be9393;
       grid-area: n;
+      align-items: center;
     }
 
     main {
@@ -98,10 +113,15 @@
     footer {
       grid-area: f;
       background-color: #f15b5b;
+      color: white;
+      font-family: "Judson", serif;
+      padding-left: 450px;
+      font-size: larger;
     }
 
     .first-image {
       grid-area: i;
+      background-color: #be9393;
     }
 
     .two-images {
@@ -113,31 +133,35 @@
       background-color: white;
       font-family: "Julius Sans One", sans-serif;
       text-align: center;
+      font-size: xxx-large;
     }
 
     .bottom-images {
       grid-area: b;
-      background-color: red;
+      background-color: #f15b5b;
     }
 
     .divider {
       grid-area: d;
       background-color: #f15b5b;
+      color: #f15b5b;
     }
 
     .vl {
       margin-left: 100px;
+      margin-top: 50px;
       border-left: 6px solid black;
       height: 100px;
+      margin-left: 240px;
     }
 
     body {
       display: grid;
       grid:
         " i    n    h  " auto
-        " t    t    h  " auto
         " t    t    p  " auto
         " t    t    p  " auto
+        " .    .    .  " auto
         " d    d    d  " auto
         " .    .    .  " auto
         " m    m    b  " auto
