@@ -88,20 +88,38 @@
     }
     ul{
         grid-area: u;
+        margin-right: 100px;
       }
       p{
       grid-area: p;
+      margin-top: 10px;
+      font-family: "Gloria Hallelujah";
       }
       img{
-        width: 200px;
+        border-radius: 50px;
+        border: 3px solid #0500FF;
+        margin-top: 20px;
+        width: 220px;
         grid-area: i;
+        margin-left: 20px;
+      }
+      li{
+        font-family: "Gloria Hallelujah";
+        color: #000C4B;
+        font-size: 25px;
+      }
+      h2{
+        font-family: "Klee One", cursive;
+        text-decoration: underline;
+        color: #003971;
+        font-size: 40px;
       }
     main{   
     display: grid;
         grid:
           " p    p    .    i" auto
-          " p    p    .    i" auto
-          " .    u    u    ." auto
+          " p    p    u    i" auto
+          " .    .    u    ." auto
           " .    .    .    ." auto
           / auto auto auto auto;
      margin-left: 15px;
