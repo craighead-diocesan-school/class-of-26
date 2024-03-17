@@ -23,48 +23,50 @@
     <a href="miglia.html">Miglia</a>
  </nav>
  <main>
- <p>
-  I am a year 11 student at Craighead. I play violin and piano, dance and love math. I love having game nights with Miglia and Hannah even though they rig Uno Flip against me. In my spare time (not that I have much now we have a puppy) I like to read and do puzzles, I can complete a puzzle in just one weekend if I’ve done it before.
- </p>
- <h2> My projects</h2>
- <ul>
+  <p>
+   I am a year 11 student at Craighead. I play violin and piano, dance and love math. I love having game nights with Miglia and Hannah even though they rig Uno Flip against me. In my spare time (not that I have much now we have a puppy) I like to read and do puzzles, I can complete a puzzle in just one weekend if I’ve done it before.
+  </p>
+  <img src="Beth-Image.jpeg">
+  <ul>
+    <h2> My projects</h2>
     <li>Intoduction</li>
     <li>My summer</li>
     <li>Why Web Dev</li>
- </ul>
+  </ul>
  </main>
  <footer>
  <p>&copy Beth Savage Craighead 2024</p>
  </footer>
  <style>
-   footer{ 
+    footer{ 
     text-align: center;
     background-color: lightgray; 
     grid-area: f;
-    }
-   header{
+     }
+    header{
     font-family: "Klee One", cursive;
     text-align: center;
     background: #95fff2;
     padding: 5px;
     color: #0500FF;
     grid-area: h;
-    }
-    body{
+    font-size: 25px;
+     }
+     body{
         margin:0em;
         display: grid;
     grid: " h    h    h  " 20vh
           " n    m    .  " 70vh
           " f    f    f  " 10vh
           / 1fr  5fr  1fr;
-    }
-    nav{
+     }
+     nav{
      background: #95fff2;
      padding-left: 10px;
      padding-right: 10px;
      grid-area: n;
-    }
-    a{
+     }
+     a{
      display: flex;
      color: #0500FF; 
      font-family: fuzzy bubbles;
@@ -73,21 +75,56 @@
      border-radius: 2em;
      margin-top: 15px;
      padding-left: 50px;
-    }
-    a:hover{
+     }
+     a:hover{
         border: 1px solid #95fff2;
         color: #95fff2;
         background: #0500FF;
-    }
-    .active{
+     }
+     .active{
         border: 1px solid #95fff2;
         color: #95fff2;
         background: #0500FF;
-    }
-    main{
+     }
+     ul{
+        grid-area: u;
+        margin-right: 100px;
+      }
+     p{
+      grid-area: p;
+      margin-top: 10px;
+      font-family: "Gloria Hallelujah";
+      }
+     img{
+        border-radius: 50px;
+        border: 3px solid #0500FF;
+        margin-top: 20px;
+        width: 220px;
+        grid-area: i;
+        margin-left: 20px;
+      }
+     li{
+        font-family: "Gloria Hallelujah";
+        color: #000C4B;
+        font-size: 25px;
+      }
+     h2{
+        font-family: "Klee One", cursive;
+        text-decoration: underline;
+        color: #003971;
+        font-size: 40px;
+      }
+     main{   
+    display: grid;
+        grid:
+          " p    p    .    i" auto
+          " p    p    u    i" auto
+          " .    .    u    ." auto
+          " .    .    .    ." auto
+          / auto auto auto auto;
      margin-left: 15px;
      grid-area: m;
-    }
+     }
  </style>
 </body>
 </html>
