@@ -73,6 +73,10 @@
     </div>
   </body>
   <style>
+    body {
+      margin: 0;
+      width: 100vw;
+    }
     header {
       background-color: #f15b5b;
       color: white;
@@ -89,8 +93,9 @@
       display: grid;
       text-decoration: none;
       color: white;
-      margin-top: 15px;
+      margin-top: 20px;
       margin-right: 20px;
+      margin-left: 20px;
       width: 180px;
       height: 50px;
       text-align: center;
@@ -109,6 +114,7 @@
       font-size: xx-large;
       padding-left: 50px;
       padding-top: 20px;
+      padding-right: 50px;
     }
 
     footer {
@@ -122,11 +128,16 @@
 
     .first-image {
       grid-area: i;
-      background-color: #be9393;
     }
 
     .two-images {
       grid-area: t;
+    }
+
+    .two-images img {
+      padding: 0px 0px;
+      margin: 0px 0px;
+      margin-bottom: -10px;
     }
 
     .projects {
@@ -154,14 +165,14 @@
       margin-top: 70px;
       border-left: 6px solid black;
       height: 100px;
-      margin-left: 330px;
+      margin-left: 220px;
     }
 
     body {
       display: grid;
       grid:
         " i    n    h  " 35em
-        " t    p    p  " auto
+        " t    t    p  " auto
         " d    d    d  " auto
         " m    m    b  " auto
         " f    f    f  " auto
