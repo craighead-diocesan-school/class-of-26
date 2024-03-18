@@ -1,5 +1,4 @@
 <html>
-
 <body>
     <header>
         <h1>
@@ -11,15 +10,9 @@
         <img src="Yuna-Image.png">
     </header>
     <nav>
-        Home　　
-        Azu 　 Beth　 Eva　 Isha　 Miglia 　Mr Hullen 　Neve　 <div class="row row--emoji">
-            <p class="cell"><span class="underline underline--emoji">Yuna</span>
-            </p>
-        </div>
+        Home　　　
+        Azu　　Beth　　Eva　　Isha　　Miglia　　Mr Hullen　　Neve　　 <span class="underline underline--emoji">Yuna</span>
     </nav>
-
-
-
 
     <main>
 
@@ -34,9 +27,18 @@
             <li>
 
 
-
-
             </li>
+            <p><span>    My project</span>
+                </p>
+                <p>
+                    Introduce
+                    </p>
+                    <p>
+                     My summer
+                </p>
+            <p>
+                    Why Web Dev
+                    </p>
     </main>
 
 
@@ -78,7 +80,10 @@
 
     body {
         display: grid;
-        grid: " h      n    n" 5em " h      m    m" auto " .      .    f" 2em / 1.5fr 5fr 1fr;
+        grid: " h      n    n" 3em
+              " h      m    m" auto
+              " .      .    f" 2em 
+              / 1.5fr 5fr 1fr;
         flex: space-around;
     }
 
@@ -120,10 +125,14 @@
         background-image: url(computer.jpg);
         background-position: center;
         background-size: cover;
-    }
+      padding-left: 2%;
+    padding-top: 0.5%;
+}
 
 
-    nav {
+    nav {padding-top: 0.5%;
+        padding-left: 2%;
+        font-size: medium;
         grid-area: n;
     }
 
@@ -139,4 +148,13 @@
         height: 300px;
         object-fit: contain;
     }
+    
+    {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{padding-left:2%;
+padding-top:0.5%;}
 </style>
