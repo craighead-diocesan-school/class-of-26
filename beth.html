@@ -38,12 +38,14 @@
  <p>&copy Beth Savage Craighead 2024</p>
  </footer>
  <style>
-    footer{ 
-    text-align: center;
-    background-color: lightgray; 
-    grid-area: f;
+     footer{ 
+     text-align: center;
+     background-color: lightgray; 
+     grid-area: f;
+     margin-bottom: 0em;
+     height:20vh;
      }
-    header{
+     header{
     font-family: "Klee One", cursive;
     text-align: center;
     padding: 5px;
@@ -53,11 +55,11 @@
     background-image: linear-gradient(to right, #95fff2 , #88FFA9, #95fff2);
      }
      body{
-        margin:0em;
-        display: grid;
+    margin:0em;
+    display: grid;
     grid: " h    h    h  " 20vh
           " n    m    .  " 70vh
-          " f    f    f  " 10vh
+          " f    f    f  " 20vh
           / 1fr  5fr  1fr;
      }
      nav{
@@ -66,7 +68,7 @@
      padding-right: 10px;
      grid-area: n;
      }
-     a{
+     nav a{
      display: flex;
      color: #0500FF; 
      font-family: fuzzy bubbles;
@@ -76,7 +78,7 @@
      margin-top: 15px;
      padding-left: 50px;
      }
-     a:hover{
+    nav a:hover{
         border: 1px solid #95fff2;
         color: #95fff2;
         background: #0500FF;
@@ -88,12 +90,14 @@
      }
      ul{
         grid-area: u;
-        margin-right: 100px;
+        margin: 0px;
+        padding-bottom: 0px;
       }
      p{
       grid-area: p;
       margin-top: 10px;
       font-family: "Gloria Hallelujah";
+      margin-bottom: 0em;
       }
      img{
         border-radius: 50px;
@@ -117,13 +121,14 @@
      main{   
     display: grid;
         grid:
-          " p    p    .    i" auto
-          " p    p    u    i" auto
-          " .    .    u    ." auto
-          " .    .    .    ." auto
+          " p    p    .    i" 20vh
+          " p    p    u    i" 50vh
+          " .    .    u    ." 20vh
+          " .    .    .    ." 10vh
           / auto auto auto auto;
      margin-left: 15px;
      grid-area: m;
+     margin-bottom: 0px;
      }
  </style>
 </body>
