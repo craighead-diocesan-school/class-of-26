@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Neve</h1>
+      <h2>Gaffaney</h2>
+      <h3>Digi Profile</h3>
+    </header>
+
+    <nav>
+      <a href="neve.html">Neve</a>
+      <a href="isha.html">Isha</a>
+      <a href="beth.html">Beth</a>
+      <a href="eva.html">Eva</a>
+      <a href="yuna.html">Yuna</a>
+      <a href="azu.html">Azu</a>
+      <a href="miglia.html">Miglia</a>
+    </nav>
+
+    <main>
+      <p>I am Currently a Year 11 Student attending Craighead Diocesan School, who takes digi tech.</p>
+      <p>Interesting stuff about me:</p>
+      <ul>
+        <li>I play the drums</li>
+        <li>I love watching movies and television shows</li>
+        <li>I play badminton</li>
+        <li>I love cars and Formula 1</li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy Neve Gaffaney 2024</p>
+    </footer>
+
+    <div class="first-image">
+      <img src="Neve-first-img.png" />
+    </div>
+
+    <div class="two-images">
+      <img src="Neve-second-img.png" />
+      <img src="Neve-third-img.png" />
+    </div>
+
+    <div class="projects">
+      <div class="vl"></div>
+      <p>My Projects FOR 2024</p>
+      <div class="vl"></div>
+      <p>Introduction</p>
+      <p>Summer</p>
+      <p>Why Web Dev?</p>
+      <div class="vl"></div>
+    </div>
+
+    <div class="bottom-images">
+      <img src="Neve-first-bottom-img.png" />
+      <img src="Neve-second-bottom-img.png" />
+    </div>
+
+    <div class="divider">
+      <p>hello</p>
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      width: 100vw;
+    }
+    header {
+      background-color: #f15b5b;
+      color: white;
+      font-family: "Julius Sans One", sans-serif;
+      text-align: center;
+      grid-area: h;
+      font-size: xxx-large;
+    }
+
+    a {
+      background-color: #f15b5b;
+      font-family: "Julius Sans One", sans-serif;
+      border-radius: 1em;
+      display: grid;
+      text-decoration: none;
+      color: white;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+      width: 180px;
+      height: 50px;
+      text-align: center;
+      font-size: xxx-large;
+    }
+
+    nav {
+      background-color: #be9393;
+      grid-area: n;
+    }
+
+    main {
+      grid-area: m;
+      background-color: white;
+      font-family: "Judson", serif;
+      font-size: xx-large;
+      padding-left: 100px;
+      padding-top: 20px;
+      padding-right: 70px;
+    }
+
+    footer {
+      grid-area: f;
+      background-color: #f15b5b;
+      color: white;
+      font-family: "Judson", serif;
+      text-align: center;
+      font-size: larger;
+    }
+
+    .first-image {
+      grid-area: i;
+    }
+
+    .first-image img {
+      width: 100%;
+    }
+
+    .two-images {
+      grid-area: t;
+    }
+
+    .two-images img {
+      padding: 0px 0px;
+      margin: 0px 0px;
+      margin-bottom: -10px;
+    }
+
+    .projects {
+      grid-area: p;
+      background-color: white;
+      font-family: "Julius Sans One", sans-serif;
+      text-align: center;
+      font-size: xxx-large;
+      color: black;
+    }
+
+    .bottom-images {
+      grid-area: b;
+      background-color: #f15b5b;
+    }
+
+    .divider {
+      grid-area: d;
+      background-color: #f15b5b;
+      color: #f15b5b;
+    }
+
+    .vl {
+      margin-left: 100px;
+      margin-top: 70px;
+      border-left: 6px solid black;
+      height: 100px;
+      margin-left: 340px;
+    }
+
+    body {
+      display: grid;
+      grid:
+        " i    n    h  " 35em
+        " t    p    p  " auto
+        " d    d    d  " auto
+        " m    m    b  " auto
+        " f    f    f  " auto
+        / 2fr 2fr 4fr;
+    }
+  </style>
+</html>
