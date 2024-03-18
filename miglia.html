@@ -25,7 +25,7 @@
       <a class="active" href="miglia.html">Miglia</a>
     </nav>
 
-    <img src="miglia image.jpg" />
+    <img class="profile" src="miglia image.jpg" />
     <main>
       <p>I am a year 11 student at Craighead. I play many instruments, do dance and karate. I love to read and team up with Hannah to beat Beth in uno flip (don not believe Beth we never cheat).</p>
     </main>
@@ -45,21 +45,24 @@
         grid:
           " h    i    n  " 30vh
           " m    i    n  " 20vh
-          " m    p    p  " 30vh
-          " f    f    f  " 20vh
-          / 1fr 5fr 1fr;
+          " m    p    p  " 40vh
+          " f    f    f  " 10vh
+          / 2fr 2fr 1fr;
       }
 
       header {
         background-color: rgb(211, 100, 100);
         box-shadow: 25px 25px rgb(115, 64, 64);
-        margin-right: 48rem;
         text-align: center;
         grid-area: h;
+        margin-top: 8px;
+        margin-left: 8px;
       }
 
       .projects {
         grid-area: p;
+        font-size: xx-large;
+        margin-left: 10rem;
       }
       nav {
         grid-area: n;
@@ -81,6 +84,7 @@
         font-weight: 400;
         font-style: normal;
         color: white;
+        font-size: xxx-large;
       }
 
       h2 {
@@ -88,6 +92,7 @@
         font-weight: 400;
         font-style: normal;
         color: white;
+        font-size: xx-large;
       }
 
       h3 {
@@ -96,19 +101,24 @@
         font-style: normal;
       }
 
-      img {
-        width: 12rem;
+      .profile {
+        width: 17rem;
         border-radius: 50%;
         grid-area: i;
+        margin-left: 5rem;
+      }
+
+      body {
+        margin: 0;
       }
 
       footer {
         background-color: rgb(158, 153, 153);
         padding: 1rem;
         text-align: center;
+        padding-top: 1.5rem;
         grid-area: f;
         color: white;
-        padding-top: 3rem;
       }
 
       a {
@@ -143,6 +153,7 @@
         font-optical-sizing: auto;
         font-weight: <weight>;
         font-style: normal;
+        font-size: xx-large;
       }
     </style>
   </body>
