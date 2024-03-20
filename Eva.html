@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet" />
     <title>🔥 Eva Bro</title>
   </head>
   <body>
@@ -25,27 +28,38 @@
       <a href="isha.html">&#x2022;isha</a>
       <a href="miglia.html">&#x2022;miglia</a>
       <a href="beth.html">&#x2022;beth</a>
+      <a href="azu.html">&#x2022;auz</a>
+      <a href="yuna.html">&#x2022;yuna</a>
+      <a href="Mr Hullen.html">&#x2022;mr hullen</a>
     </nav>
     <main>
-      I am a year 11 at Craighead Diocesan School Timaru. I am a singer and I play guitar, my favourite subject is History and Digi.
-      <h3>Stuff I like:</h3>
-      <ul>
-        <li>My dog</li>
-        <li>Taylor Swift & Harry Styles</li>
-        <li>Animals</li>
-        <li>Going to concerts</li>
-        <li>Hanging with friends</li>
-      </ul>
+      <div class="wrapper">
+        <div>
+          <h5>About Me</h3>
+          <p>I am a year 11 at Craighead Diocesan School Timaru. I am a singer and I play guitar, my favourite subject is History and Digi. I love to play with my pets and go on bike rides. I am normally hanging out with my friends in the weekend mostly in town wasting money🤪</p>
+        </div>
+        <div>
+          <h3>Stuff I like:</h3>
+          <ul class="stuff-i-like">
+            <li>My dog</li>
+            <li>Taylor Swift & Harry Styles</li>
+            <li>Animals</li>
+            <li>Going to concerts</li>
+            <li>Hanging with friends</li>
+          </ul>
+          <h4>My Projects</h4>
 
-      <img src="Eva.JPG" />
-
-      <h2>My Projects</h2>
-
-      <ul>
-        <li>Introduction</li>
-        <li>Summer</li>
-        <li>Why Web Dev</li>
-      </ul>
+          <ul class="project-list">
+            <li>Introduction</li>
+            <li>Summer</li>
+            <li>Why Web Dev</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Eva.JPG" />
+          <img src="Eva again.jpg" />
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -71,6 +85,7 @@
       height: 10cm;
       float: right;
     }
+
     nav {
       background-color: #fff07c;
       font-size: 1.5em;
@@ -78,10 +93,56 @@
 
     nav a {
       text-decoration: none;
+      font-family: "Truculenta", sans-serif;
+      margin-right: 1%;
     }
 
     h2 {
       margin-bottom: 0;
+    }
+    h3 {
+      color: red;
+      font-size: 2em;
+      font-family: "Truculenta", sans-serif;
+    }
+    h5{
+      color: red;
+      font-size: 2em;
+      font-family: "Truculenta", sans-serif;
+      padding-left: 15%; 
+      padding-top: 10%;
+      margin: 0;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    .wrapper div {
+      width: 40%;
+    }
+    p {
+      padding-left: 15%;
+      padding-right: 35%;
+      padding-top: 6%;
+      font-family: "Truculenta", sans-serif;
+    }
+    h4 {
+      padding-left: 0%;
+      padding-top: 15%;
+      color: red;
+      font-size: 2em;
+      margin: 0;
+      font-family: "Truculenta", sans-serif;
+    }
+    .project-list {
+      padding-left: 0%;
+      padding-top: 0%;
+      font-family: "Truculenta", sans-serif;
+    }
+    .stuff-i-like {
+      padding-left: 0%;
+      font-family: "Truculenta", sans-serif;
     }
     body {
       display: grid;
