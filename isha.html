@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
 
 
 
@@ -27,22 +31,30 @@
     <header>
 
         <h1> Isha Uniyal -Digital Technology , Yr 11 </h1>
-
-
+    
     </header>
 
 
     <nav>
-        <a href="index.html">Home</a>
-        <li><a href="neve.html"> neve </a></li>
-        <li><a href="miglia.html">miglia</a></li>
-        <li><a href="beth.html">beth</a></li>
-        <li><a href="azu.html">azu</a></li>
-        <li><a href="Eva.html">eva</a></li>
+        
+         
+        <a class="Home" href="index.html"> Home</a>
+        <a class="Isha" href="isha.html"> &#x2022;Isha</a>
+        <a href="neve.html"> &#x2022;Neve </a>
+        <a href="miglia.html">&#x2022;Miglia</a>
+        <a href="beth.html">&#x2022; Beth</a>
+        <a href="azu.html">&#x2022; Azu</a>
+        <a href="Eva.html">&#x2022; Eva</a>
+        <a href="yuna.html">&#x2022; Yuna</a>
 
 
 
     </nav>
+
+
+
+
+
 
     <main>
         <p>
@@ -72,7 +84,35 @@
         </ul>
 
         </p>
+
     </main>
+
+
+    <h2>Year 10 Project, Term 1: </h2>
+    <h3>My websites: </h3>
+
+    
+
+
+
+
+    <div class="projects">
+        <p>
+          <a href="https://craighead-diocesan-school.github.io/introduction-dale-cale9/"> &#x2022; Introduction </a>
+        </p>
+        <p>
+          <a href="https://craighead-diocesan-school.github.io/summer-dale-cale9/"> &#x2022; Summer </a>
+        </p>
+        <p>
+          <a href="https://craighead-diocesan-school.github.io/why-web-dev-dale-cale9/"> &#x2022; Why Web Dev? </a>
+        </p>
+    </div>
+
+
+
+
+
+
 
     <footer>
         <p>
@@ -83,7 +123,18 @@
 
 
     <div class="valentines">
-        <img src="valentines.png">
+        <img src="isha-valentines.png">
+
+    </div>
+
+    <div class="isha">
+        <img src="isha.png">
+
+    </div>
+
+
+    <div class="isha-third">
+        <img src="isha-third.png">
 
     </div>
 
@@ -94,12 +145,11 @@
             font-family: "Jacques Francois Shadow", serif;
             font-size: 3em;
             color: #ffffff;
-            text-align: right;
             font-weight: 400;
             background-color: #386FA4;
             padding: 1.4cm;
             box-shadow: 0px 35px #3594B2, 0px 70px #4EA6C2;
-
+            text-align: center;
 
         }
 
@@ -113,16 +163,25 @@
             font-family: "Itim", cursive;
             font-weight: 400;
             box-shadow: 35px 38px #3594B2, 70px 60px #4EA6C2;
-            border-radius: 0.5em;
-            padding-left: 0.8em;
-            padding-right: 0.5em;
+            padding-left: 2em;
+            padding-right: 2em;
+
 
 
 
         }
 
+
         header {
             grid-area: h;
+        }
+
+        h2 {
+            grid-area: p;
+        }
+
+        h3 {
+            grid-area: t;
         }
 
         nav {
@@ -138,28 +197,54 @@
             grid-area: f;
         }
 
-        h2 {
-            grid-area: k;
-        }
+
 
         body {
             display: grid;
             grid:
-                " h    h    h   h   h " 11em " n    .    .   k   . " 10em " n    m    m   m   . " 15em " n    .    i   .   . " 11em " n    v    .   .   . " 11em " f    f    f   f   f " 11em / 2fr 3fr 2fr 2fr 5fr
+                " h   h    h   h   h   h " 11em 
+                " n   .    .   .   .   . " 10em 
+                " n   m    m   m   .   p " 6em 
+                " n   m    m   m   .   q " 5em 
+                " n   .    .   .   .   . " 10em 
+                " n   v    k   .   .   t " 6em 
+                " n   .    .   .   .   o " 5em 
+                " n   .    .   .   .   . " 10em 
+                " f   f    f   f   f   f " 11em
+               / 2fr  3fr 2fr 2fr 4fr 5fr
         }
 
 
 
 
-        .valentines {
-            grid-area: v;
-            width: 5px;
-            margin-left: 2cm;
+        .isha-third {
+            grid-area: q;
+            width: 40px;
+
+            height: 30px;
+        }
+
+
+
+        .isha {
+            grid-area: k;
+            width: 40px;
+            margin-left: 1cm;
+            height: 30px;
         }
 
         img {
-            width: 350px;
+            width: 300px;
+            height: 250px;
         }
+
+        .valentines {
+            grid-area: v;
+            width: 300px;
+            margin-left: 3cm;
+        }
+
+
 
         p {
             background-color: #386FA4;
@@ -168,6 +253,34 @@
             text-decoration-color: #ffffff;
 
 
+
+        }
+
+
+
+        h3 {
+            background-color: #487FB4;
+            font-family: "Itim", cursive;
+            font-weight: 200;
+            box-shadow: 10px 10px #2D6294;
+            color: #ffffff;
+            width: 6cm;
+            height: 1cm;
+            font-size: medium;
+
+        }
+
+
+
+        h2 {
+            background-color: #487FB4;
+            font-family: "Itim", cursive;
+            font-weight: 200;
+            box-shadow: 10px 10px #2D6294;
+            color: #ffffff;
+            width: 6cm;
+            height: 1cm;
+            font-size: medium;
 
         }
 
@@ -183,26 +296,78 @@
 
         }
 
-
-        a {
+        nav a {
             background-color: #487FB4;
             text-decoration: none;
             color: #ffffff;
-            border-radius: 0.1em;
-            margin-top: 5px;
-            margin-left: 5px;
-            margin-right: 5px;
-            padding-left: 3em;
-            padding-right: 3em;
+            border-radius: 0.3em;
+            padding-left: 1em;
+            padding-right: 1em;
+            display: block;
+            margin-bottom: 0.3cm;
+            height: 1cm;
+    
 
+        }
+
+
+        .Home {
+            background: #487FB4;
+            height: 2em;
+            font-size: xx-large;
+            line-height: 2em;
+            margin-bottom: 1em;
+        
+            
         }
 
 
 
         footer {
             text-align: center;
+            font-family: "Italiana", sans-serif;
+            color: white;
 
         }
+
+
+
+
+
+
+
+
+.Isha{
+    color: rgb(192, 192, 192);
+    background-color: #40678c;
+}
+
+
+a:hover {
+            color: rgb(34, 30, 30);
+            background: #2d6294;
+           
+        }
+
+
+
+a{
+
+     background-color: #487FB4;
+     color: #ffffff;
+     
+   
+
+
+}
+
+
+.projects{
+    grid-area: o;
+    background-color: #487FB4;
+}
+
+
     </style>
 
 
