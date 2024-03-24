@@ -212,5 +212,36 @@
         " f    f    f  " auto
         / 4fr 1fr 4fr;
     }
+
+    @media screen and (max-width: 1000px) {
+      body {
+        display: grid;
+        grid:
+          " n    h    h " auto
+          " i    i    i " auto
+          " t    t    t " auto
+          " .    .    . " auto
+          " p    p    p " auto
+          " d    d    d " auto
+          " m    m    m " auto
+          " b    b    b " auto
+          " f    f    f " auto
+          / auto auto auto;
+      }
+
+      .two-images {
+        width: 50%;
+        display: flex;
+      }
+
+      .first-image {
+        width: 100%;
+        margin-bottom: -10px;
+      }
+
+      nav a {
+        margin-bottom: 10px;
+      }
+    }
   </style>
 </html>
