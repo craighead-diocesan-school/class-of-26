@@ -138,6 +138,52 @@
      grid-area: m;
      margin-bottom: 0px;
      }
+     @media screen and (max-width: 1000px) {
+      main{
+         margin-left: 1%;
+         display: grid;
+        grid:
+          " p    p    i    " 10vh
+          " p    p    i    " 35vh
+          " .    u    .    " 10vh
+          " .    u    .    " 25vh
+          / 30vh 35vh 40vh ;
+      }
+      header{
+         padding:1%;
+         font-size: 15px;
+         width: 100%;
+      }
+      p{
+         margin-top:2%;
+      }
+      body{
+         width: fit-content;
+         display: grid;
+    grid: " h    h    h  " 30vh
+          " n    m    .  " 99vh
+          " n    m    .  " 22vh
+          " f    f    f  " 10vh
+          / 1fr  5fr  1fr;
+      }
+      img{
+         width: 150px;
+         margin-left: 5%;
+      }
+      li a{
+         font-size: 15px;
+      }
+      h2{
+         font-size: 20px;
+      }
+      nav a{
+         padding-left: 1%;
+      }
+      ul{
+         margin-top: 0%;
+         padding-left: 1%;
+      }
+     }
  </style>
 </body>
 </html>
