@@ -175,15 +175,27 @@
       }
 
       @media screen and (max-width: 1000px) {
+        body {
+          display: grid;
+          grid:
+            " h    n  " 30vh
+            " m    i  " 30vh
+            " m    p  " 30vh
+            " f    f  " 10vh
+            / 2fr 2fr;
+        }
+
         main p {
           font-size: large;
           width: 70%;
+          grid-area: m;
         }
 
         header {
           margin: 0;
           width: 90%;
           text-align: center;
+          grid-area: h;
         }
 
         h1 {
@@ -197,11 +209,17 @@
         .profile {
           width: 80%;
           margin: 0 auto;
-          margin-top: 12px;
+          grid-area: i;
+          align-self: center;
+        }
+
+        nav {
+          grid-area: n;
+          margin-left: 25%;
         }
 
         nav a {
-          margin: 10px;
+          margin-top: 8%;
         }
 
         .projects h3 {
@@ -212,8 +230,14 @@
           font-size: large;
         }
 
+        .projects {
+          grid-area: p;
+        }
+
         footer {
           margin: 0px;
+          grid-area: f;
+          text-align: center;
         }
       }
     </style>
