@@ -32,7 +32,7 @@
     </nav>
 
     <main>
-      <p>I am Currently a Year 11 Student attending Craighead Diocesan School, who takes digi tech. This page is a collective portfolio of all of my websites I have developed both this year, and last year.</p>
+      <p>I am currently a Year 11 student attending Craighead Diocesan School, who takes Digi Tech. This page is a collective portfolio of all of my websites I have developed both this year, and last year.</p>
       <p>Interesting stuff about me:</p>
       <ul>
         <li>I play the drums</li>
@@ -211,6 +211,46 @@
         " m    m    b  " auto
         " f    f    f  " auto
         / 4fr 1fr 4fr;
+    }
+
+    @media screen and (max-width: 1000px) {
+      body {
+        display: grid;
+        grid:
+          " n    h    h " auto
+          " i    i    i " auto
+          " t    t    t " auto
+          " p    p    p " auto
+          " d    d    d " auto
+          " m    m    m " auto
+          " b    b    b " auto
+          " f    f    f " auto
+          / auto auto auto;
+      }
+
+      .two-images {
+        width: 50%;
+        display: flex;
+      }
+
+      .first-image {
+        width: 100%;
+        margin-bottom: -10px;
+      }
+
+      .projects {
+        font-size: 2em;
+      }
+
+      nav a {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
     }
   </style>
 </html>
