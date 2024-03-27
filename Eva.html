@@ -36,7 +36,7 @@
       <div class="wrapper">
         <div>
           <h5>About Me</h3>
-          <p>I am a year 11 at Craighead Diocesan School Timaru. I am a singer and I play guitar, my favourite subject is History and Digi. I love to play with my pets and go on bike rides. I am normally hanging out with my friends in the weekend mostly in town wasting money🤪</p>
+          <p>I am a year 11 at Craighead Diocesan School Timaru. I am a singer and I play guitar, my favourite subject is History and Digi. I love to play with my pets and go on bike rides. I am normally hanging out with my friends in the weekend mostly in town wasting money</p>
         </div>
         <div>
           <h3>Stuff I like:</h3>
@@ -178,7 +178,38 @@
       font-size: xx-large;
       color: red;
     }
+@media screen and (max-width: 1000px) {
+  body {
+      display: grid;
+      grid:
+        "  h   h    h  " auto
+        " n    n   n  " auto
+        " m    m   m  " auto
+        " f    f   f " 5em
+        / 1fr 5fr 1fr;
+    }
 
+    .wrapper {
+      flex-direction: column;
+    }
+    .wrapper div {
+      width: 100%;
+    }
+    p {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+   .stuff-i-like {
+    padding-left: 10%;
+    
+   }
+   .project-list {
+    padding-left: 10%;
+   }
+   h5 {
+    padding-left: 0%;
+   }
+} 
 
   </style>
 </html>
