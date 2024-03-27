@@ -1,0 +1,173 @@
+<html>
+<title>Yuna Digi profile</title>
+
+<body>
+    <header>
+        <h1>Yuna</h1>
+        <h2>Nomura</h2>
+        <h3>Year 11 Digi</h3>
+        <h4>I am a Year 11 student at Craighead. I am from Japan. I have been come to New Zealand since August,2023. I have a younger brother and sister.
+        </h4>
+        <img src="Yuna-Image.png">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        　　　
+        <a href="azu.html">Azu</a>　　
+        <a href="beth.html">Beth</a>　　
+        <a href="Eva.html">Eva</a>　　
+        <a href="isha.html">Isha</a>　　
+        <a href="miglia.html">Miglia</a>　　
+        <a href="">Mr Hullen</a>　　
+        <a href="neve.html">Neve</a>　　
+        <a href="yuna.html"><span class="underline underline--emoji">Yuna</span>
+        </a>
+    </nav>
+
+    <main>
+       
+
+        <ul><div class="introduce"><h4>I love</h4>
+            <li>
+                listening and playing music
+            </li>
+            <li>
+                animals (especially dogs)
+            </li>
+            <li>
+                skiing
+            </li>
+            <li>
+                taking a walk
+            </li>
+        </div>
+        </ul>
+
+        <p>
+            <h5>
+        <div class="projects"> My projects</div>
+    </h5>
+        <p>
+            <a href="">Introduce</a>
+        </p>
+        <p>
+            <a href="">My summer</a>
+        </p>
+        <p>
+            <a href="">Why Web Dev</a>
+        </p>
+        </p>
+    </main>
+
+
+    <footer>
+        ©Yuna Nomura 2024
+    </footer>
+
+
+</body>
+
+</html>
+
+<style>
+ body {
+        display: grid;
+        grid: " h      n    n" 3em 
+              " h      m    m" auto
+              " .      .    f" 1em 
+              / 1.5fr 5fr 1fr;
+        flex: space-around;
+    }
+
+header {
+        grid-area: h;
+    }
+
+    h1,h2 {color: black;
+        font-family: "Lora", serif;
+    }
+
+    h1 {margin-left: 30px;
+    }
+
+    h2 {margin-left: 50px;
+    }
+
+    h3 {color: 148835;
+        background-color: white;
+        font-size: small;
+        font-weight: 300;
+        text-align: center
+      }
+
+      h4{margin-top: 1%;}
+
+
+    .underline {
+        background-repeat: repeat-x;
+    }
+
+    .underline--emoji {
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/heart.png");
+        background-position: 0 1.06em;
+        background-size: 5px 3px;
+        color: mediumvioletred;
+    }
+
+    img {
+        margin-top: 3%;
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    main {
+        grid-area: m;
+        background-color: pink;
+        background-image: url(computer.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-left: 2%;
+        padding-top: 0.5%;
+    }
+
+    nav {
+        padding-top: 0.5%;
+        padding-left: 2%;
+        font-size: medium;
+        grid-area: n;
+    color: black;
+}
+
+    h5 {
+        font-family: "Rubik Scribble", system-ui;
+    }
+
+    .introduce {
+        font-family: "Fascinate Inline", system-ui;
+        background-color:  rgb(240, 143, 143);
+        box-shadow: 25px 25px   rgb(255, 157, 157) ;
+        padding-left:4%;
+        padding-top: 2%;
+        margin-right: 30%;
+
+
+    }
+
+    footer {
+        font-size: x-small;
+        grid-area: f;
+        margin-top: 3%;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 1000px) {
+        /**/
+
+        main {
+            margin-left: 10px
+        }
+    }
+</style>

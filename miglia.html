@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Miglia's Digi Profile</title>
+    <link rel="icon" href="favicon (1).ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kameron:wght@400..700&family=Kavoon&family=Kelly+Slab&display=swap" rel="stylesheet" />
@@ -25,34 +25,54 @@
       <a class="active" href="miglia.html">Miglia</a>
     </nav>
 
+    <img class="profile" src="miglia image.jpg" />
     <main>
-      <p>I am a year 11 student at Craighead. I play many instruments, do dance and karate. I love to read and team up with Hannah to beat Beth in uno flip (don’t believe Beth we never cheat).</p>
-
-      <ul>
-        <h3>My Projects:</h3>
-        <li>Introduction</li>
-        <li>Summer</li>
-        <li>Why Web Dev</li>
-      </ul>
+      <p>I am a year 11 student at Craighead. I play many instruments, do dance and karate. I love to read and team up with Hannah to beat Beth in uno flip (do not believe Beth we never cheat).</p>
     </main>
     <footer>&copy;Miglia Schicker 2024</footer>
+    <div class="projects">
+      <ul>
+        <h3>My Projects</h3>
+        <li><a href="https://craighead-diocesan-school.github.io/introduction-Miglia-Schicker/"> Introduction</a></li>
+        <li><a href="https://craighead-diocesan-school.github.io/summer-Miglia-Schicker/"> Summer</a></li>
+        <li><a href="https://craighead-diocesan-school.github.io/why-web-dev-Miglia-Schicker/"> Why web dev</a></li>
+      </ul>
+    </div>
 
     <style>
       body {
         display: grid;
         grid:
-          " h    h    n  " 20vh
-          " m    .    n  " 60vh
-          " f    f    f  " 20vh
-          / 1fr 5fr 1fr;
+          " h    i    n  " 30vh
+          " m    i    n  " 20vh
+          " m    p    .  " 40vh
+          " f    f    f  " 10vh
+          / 2fr 2fr 1fr;
       }
 
       header {
         background-color: rgb(211, 100, 100);
         box-shadow: 25px 25px rgb(115, 64, 64);
-        margin-right: 48rem;
         text-align: center;
         grid-area: h;
+        margin-top: 8px;
+        margin-left: 8px;
+      }
+
+      .projects {
+        grid-area: p;
+        font-size: x-large;
+        text-align: center;
+      }
+
+      .projects h3 {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: xxx-large;
+      }
+
+      .projects a {
+        color: black;
       }
 
       nav {
@@ -75,6 +95,7 @@
         font-weight: 400;
         font-style: normal;
         color: white;
+        font-size: xxx-large;
       }
 
       h2 {
@@ -82,6 +103,7 @@
         font-weight: 400;
         font-style: normal;
         color: white;
+        font-size: xx-large;
       }
 
       h3 {
@@ -90,16 +112,28 @@
         font-style: normal;
       }
 
+      .profile {
+        width: 17rem;
+        border-radius: 50%;
+        grid-area: i;
+        margin: 0 auto;
+        margin-top: 12px;
+      }
+
+      body {
+        margin: 0;
+      }
+
       footer {
         background-color: rgb(158, 153, 153);
         padding: 1rem;
         text-align: center;
+        padding-top: 1.5rem;
         grid-area: f;
         color: white;
-        padding-top: 3rem;
       }
 
-      a {
+      nav a {
         display: block;
         text-decoration: none;
         color: black;
@@ -107,10 +141,10 @@
         border-radius: 0.5em;
         margin-left: 3rem;
         margin-right: 3rem;
-        margin-top: 1.5rem;
+        margin-top: 0.9rem;
       }
 
-      a:hover {
+      nav a:hover {
         color: white;
         background: black;
       }
@@ -124,6 +158,11 @@
         font-family: "Julius Sans One", sans-serif;
         font-weight: 400;
         font-style: normal;
+        list-style-type: none;
+      }
+
+      ul {
+        padding: 0;
       }
 
       p {
@@ -131,6 +170,74 @@
         font-optical-sizing: auto;
         font-weight: <weight>;
         font-style: normal;
+        font-size: xx-large;
+        margin-left: 2rem;
+      }
+
+      @media screen and (max-width: 1000px) {
+        body {
+          display: grid;
+          grid:
+            " h    n  " 30vh
+            " m    i  " 30vh
+            " m    p  " 30vh
+            " f    f  " 10vh
+            / 2fr 2fr;
+        }
+
+        main p {
+          font-size: large;
+          width: 70%;
+          grid-area: m;
+        }
+
+        header {
+          margin: 0;
+          width: 90%;
+          grid-area: h;
+        }
+
+        h1 {
+          font-size: xx-large;
+        }
+
+        h2 {
+          font-size: x-large;
+        }
+
+        .profile {
+          width: 80%;
+          margin: 0 auto;
+          grid-area: i;
+          align-self: center;
+        }
+
+        nav {
+          grid-area: n;
+          margin-left: 25%;
+        }
+
+        nav a {
+          margin-top: 8%;
+        }
+
+        .projects h3 {
+          font-size: larger;
+        }
+
+        .projects a {
+          font-size: large;
+        }
+
+        .projects {
+          grid-area: p;
+        }
+
+        footer {
+          margin: 0px;
+          grid-area: f;
+          text-align: center;
+        }
       }
     </style>
   </body>

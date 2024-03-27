@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="Beth's-favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beth Savage</title>
+    <title>Beth Savage Digi Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Klee+One&display=swap" rel="stylesheet">
@@ -28,22 +29,24 @@
   </p>
   <img src="Beth-Image.jpeg">
   <ul>
-    <h2> My projects</h2>
-    <li>Intoduction</li>
-    <li>My summer</li>
-    <li>Why Web Dev</li>
+    <h2>My projects</h2>
+    <li><a href="https://craighead-diocesan-school.github.io/introduction-Beth-Savage/"> Introduction</a></li>
+    <li><a href="https://craighead-diocesan-school.github.io/summer-Beth-Savage/"> Summer</a></li>
+    <li><a href="https://craighead-diocesan-school.github.io/why-web-dev-Beth-Savage/"> Why web dev</a></li>
   </ul>
  </main>
  <footer>
  <p>&copy Beth Savage Craighead 2024</p>
  </footer>
  <style>
-    footer{ 
-    text-align: center;
-    background-color: lightgray; 
-    grid-area: f;
+     footer{ 
+     text-align: center;
+     background-color: lightgray; 
+     grid-area: f;
+     margin-bottom: 0em;
+     height:10vh;
      }
-    header{
+     header{
     font-family: "Klee One", cursive;
     text-align: center;
     padding: 5px;
@@ -53,20 +56,20 @@
     background-image: linear-gradient(to right, #95fff2 , #88FFA9, #95fff2);
      }
      body{
-        margin:0em;
-        display: grid;
+    margin:0em;
+    display: grid;
     grid: " h    h    h  " 20vh
           " n    m    .  " 70vh
           " f    f    f  " 10vh
           / 1fr  5fr  1fr;
      }
      nav{
-     background: #95fff2;
+     background-image: linear-gradient(to right, #95fff2 , #8FFFD4);
      padding-left: 10px;
      padding-right: 10px;
      grid-area: n;
      }
-     a{
+     nav a{
      display: flex;
      color: #0500FF; 
      font-family: fuzzy bubbles;
@@ -76,7 +79,7 @@
      margin-top: 15px;
      padding-left: 50px;
      }
-     a:hover{
+     nav a:hover{
         border: 1px solid #95fff2;
         color: #95fff2;
         background: #0500FF;
@@ -88,25 +91,34 @@
      }
      ul{
         grid-area: u;
-        margin-right: 100px;
+        margin: 0px;
+        padding-bottom: 0px;
       }
      p{
       grid-area: p;
       margin-top: 10px;
       font-family: "Gloria Hallelujah";
+      margin-bottom: 0em;
       }
      img{
         border-radius: 50px;
         border: 3px solid #0500FF;
         margin-top: 20px;
-        width: 220px;
+        width: 250px;
         grid-area: i;
-        margin-left: 20px;
+        margin-left: 50px;
       }
      li{
         font-family: "Gloria Hallelujah";
         color: #000C4B;
         font-size: 25px;
+        text-decoration: none;
+      }
+     li a{
+        font-family: "Gloria Hallelujah";
+        color: #000C4B;
+        font-size: 25px;
+        text-decoration: none;
       }
      h2{
         font-family: "Klee One", cursive;
@@ -117,13 +129,63 @@
      main{   
     display: grid;
         grid:
-          " p    p    .    i" auto
-          " p    p    u    i" auto
-          " .    .    u    ." auto
-          " .    .    .    ." auto
-          / auto auto auto auto;
+          " p    p    .    i" 10vh
+          " p    p    u    i" 50vh
+          " .    .    u    ." 20vh
+          " .    .    .    ." 5vh
+          / 30vh 35vh 50vh 20vh;
      margin-left: 15px;
      grid-area: m;
+     margin-bottom: 0px;
+     }
+     @media screen and (max-width: 1000px) {
+      main{
+         margin-left: 1%;
+         display: grid;
+        grid:
+          " p    p    " 10vh
+          " p    p    " 30vh
+          " i    .    " 10vh
+          " i    .    " 10vh
+          " .    .    " 20vh
+          " .    u    " 10vh
+          " .    u    " 10vh
+          / 35vh 35vh  ;
+      }
+      header{
+         padding:1%;
+         font-size: 15px;
+         width: 100%;
+      }
+      p{
+         margin-top:2%;
+      }
+      body{
+         width: fit-content;
+         display: grid;
+    grid: " h    h    h  " 25vh
+          " n    m    .  " 90vh
+          " n    m    .  " 50vh
+          " f    f    f  " 5vh
+          / 2fr  4fr  1fr;
+      }
+      img{
+         width: 200px;
+         margin-left: 5%;
+      }
+      li a{
+         font-size: 25px;
+      }
+      h2{
+         font-size: 30px;
+      }
+      nav a{
+         padding-left: 1%;
+      }
+      ul{
+         margin-top: 0%;
+         padding-left: 1%;
+      }
      }
  </style>
 </body>
