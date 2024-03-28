@@ -1,1 +1,215 @@
-eva
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet" />
+    <title>🔥 Eva Bro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Eva Booth</h1>
+      <h2>Year 11 Digi</h2>
+    </header>
+
+    <nav>
+      <a href="index.html">&#x2022;Home</a>
+      <a class="Eva-stuff" href="eva.html">&#x2022;Eva</a>
+      <a href="neve.html">&#x2022;Neve</a>
+      <a href="isha.html">&#x2022;Isha</a>
+      <a href="miglia.html">&#x2022;Miglia</a>
+      <a href="beth.html">&#x2022;Beth</a>
+      <a href="azu.html">&#x2022;Auz</a>
+      <a href="yuna.html">&#x2022;Yuna</a>
+      <a href="Mr Hullen.html">&#x2022;Mr Hullen</a>
+    </nav>
+    <main>
+      <div class="wrapper">
+        <div>
+          <h5>About Me</h3>
+          <p>I am a year 11 at Craighead Diocesan School Timaru. I am a singer and I play guitar, my favourite subject is History and Digi. I love to play with my pets and go on bike rides. I am normally hanging out with my friends in the weekend mostly in town wasting money</p>
+        </div>
+        <div>
+          <h3>Stuff I like:</h3>
+          <ul class="stuff-i-like">
+            <li>My dog</li>
+            <li>Taylor Swift & Harry Styles</li>
+            <li>Animals</li>
+            <li>Going to concerts</li>
+            <li>Hanging with friends</li>
+          </ul>
+          <h4>My Projects</h4>
+
+          <ul class="project-list">
+            <li>Introduction</li>
+            <li>Summer</li>
+            <li>Why Web Dev</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Eva.JPG" />
+          <img src="Eva again.jpg" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <f>&copy; Eva Booth Craighead 2024</f>
+    </footer>
+  </body>
+  <style>
+    header {
+      text-align: center;
+      background-color: #fff07c;
+      font-size: 2em;
+      font-family: "Indie Flower", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    h1 {
+      margin: 0;
+    }
+    footer {
+     text-align: center;
+     font-size: large
+    }
+    main {
+      font-size: 1.5em;
+    }
+    Img {
+      height: 10cm;
+      float: right;
+      width: 100%;
+    }
+
+    nav {
+      background-color: #fff07c;
+      font-size: 1.5em;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-family: "Truculenta", sans-serif;
+      margin-right: 1%;
+      color: blue
+    }
+
+    h2 {
+    margin: 0;
+      font-size: 1.5em;
+    }
+    h3 {
+      color: red;
+      font-size: 2em;
+      font-family: "Truculenta", sans-serif;
+    }
+    h5{
+      color: red;
+      font-size: 2em;
+      font-family: "Truculenta", sans-serif;
+      padding-left: 15%; 
+      padding-top: 10%;
+      margin: 0;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    .wrapper div {
+      width: 40%;
+    }
+    p {
+      padding-left: 15%;
+      padding-right: 35%;
+      padding-top: 6%;
+      font-family: "Truculenta", sans-serif;
+    }
+    h4 {
+      padding-left: 0%;
+      padding-top: 15%;
+      color: red;
+      font-size: 2em;
+      margin: 0;
+      font-family: "Truculenta", sans-serif;
+    }
+    .project-list {
+      padding-left: 0%;
+      padding-top: 0%;
+      font-family: "Truculenta", sans-serif;
+    }
+    .stuff-i-like {
+      padding-left: 0%;
+      font-family: "Truculenta", sans-serif;
+    }
+    body {
+      display: grid;
+      grid:
+        "  h   h    h  " auto
+        " n    n   n  " auto
+        " m    m   m  " auto
+        " f    f   f " 5em
+        / 1fr 5fr 1fr;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+
+    .Eva-stuff {
+      font-size: xx-large;
+      color: red;
+    }
+@media screen and (max-width: 1000px) {
+  body {
+      display: grid;
+      grid:
+        "  h   h    h  " auto
+        " n    n   n  " auto
+        " m    m   m  " auto
+        " f    f   f " 5em
+        / 1fr 5fr 1fr;
+    }
+
+    .wrapper {
+      flex-direction: column;
+    }
+    .wrapper div {
+      width: 100%;
+    }
+    p {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+   .stuff-i-like {
+    padding-left: 10%;
+    
+   }
+   .project-list {
+    padding-left: 10%;
+   }
+   h5 {
+    padding-left: 0%;
+   }
+} 
+
+  </style>
+</html>
