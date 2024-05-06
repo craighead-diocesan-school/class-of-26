@@ -24,13 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-
-
     <header>
         <h1> Isha Uniyal -Digital Technology , Yr 11 </h1>
     </header>
-
 
     <nav>
         <a class="Home" href="index.html"> Home</a>
@@ -43,11 +41,8 @@
         <a href="yuna.html">&#x2022; Yuna</a>
     </nav>
 
-
-
     <main>
         <p>
-
         <ul>
             My Name is Isha Uniyal, Im a Year 11 At Craighead Diocesan School.
 
@@ -69,9 +64,7 @@
                 I am fluent in Hindi
             </li>
         </ul>
-
         </p>
-
     </main>
 
 
@@ -119,6 +112,7 @@
             padding: 1.4cm;
             box-shadow: 0px 35px #3594B2, 0px 70px #4EA6C2;
             text-align: center;
+
         }
 
         nav {
@@ -131,22 +125,11 @@
             padding-left: 2em;
             padding-right: 2em;
             padding-top: 2em;
+            grid-area: n;
         }
 
         header {
             grid-area: h;
-        }
-
-        h2 {
-            grid-area: p;
-        }
-
-        h3 {
-            grid-area: t;
-        }
-
-        nav {
-            grid-area: n;
         }
 
         main {
@@ -156,30 +139,21 @@
 
         footer {
             grid-area: f;
-
-        }
-
-        .isha-third {
-            grid-area: q;
-        }
-
-        .isha {
-            grid-area: k;
-        }
-
-        .valentines {
-            grid-area: v;
-        }
-
-        .projects {
-            grid-area: o;
-
         }
 
         body {
             display: grid;
             grid:
-                " h   h    h   h   h   h " 11em " n   .    .   .   .   . " 10em " n   m    m   m   .   p " 6em " n   m    m   m   .   q " 5em " n   .    .   .   .   . " 10em " n   v    k   .   .   t " 6em " n   .    .   .   .   o " 5em " n   .    .   .   .   . " 10em " f   f    f   f   f   f " auto / 2fr 3fr 2fr 2fr 4fr 5fr
+                 " h   h    h   h   h   h " 11em 
+                 " n   .    .   .   .   . " 10em 
+                 " n   m    m   m   .   p " 6em 
+                 " n   m    m   m   .   q " 5em 
+                 " n   .    .   .   .   . " 10em
+                 " n   v    k   .   .   t " 6em 
+                 " n   .    .   .   .   o " 5em
+                 " n   .    .   .   .   . " 10em 
+                 " f   f    f   f   f   f " auto 
+                  / 2fr 3fr 2fr 2fr 4fr 5fr
         }
 
         h3 {
@@ -191,17 +165,16 @@
             width: 6cm;
             height: 1cm;
             font-size: medium;
+            grid-area: t;
         }
 
         .isha-third {
-            width: 40px;
-            height: 30px;
+            grid-area: q;
         }
 
         .isha {
-            width: 40px;
-            margin-left: 1em;
-            height: 30px;
+            grid-area: k;
+            margin-left: 3cm;
         }
 
         img {
@@ -210,7 +183,7 @@
         }
 
         .valentines {
-            width: 300px;
+            grid-area: v;
             margin-left: 3cm;
         }
 
@@ -230,6 +203,7 @@
             width: 6cm;
             height: 1cm;
             font-size: medium;
+            grid-area: p;
         }
 
         ul {
@@ -271,7 +245,8 @@
             line-height: 2em;
             font-size: x-large;
             font-weight: bold;
-            margin-top: -0.8em; }
+            margin-top: -0.8em;
+        }
 
         a:hover {
             color: rgb(34, 30, 30);
@@ -282,6 +257,7 @@
             grid-area: o;
             display: block;
             line-height: 2em;
+
         }
 
 
@@ -294,17 +270,17 @@
             body {
                 display: grid;
                 grid:
-                     " h  " 16.3em
-                     " n  " 3em
-                     " m  " auto
-                     " p  " 12em
-                     " q  " 40em
-                     " t  " 10em
-                     " o  " 25em
-                     " k  " 45em
-                     " v  " 40em
-                     " f  " 2em
-                       / 1fr
+                    " h  " 16.3em 
+                    " n  " 3em 
+                    " m  " auto 
+                    " p  " 12em 
+                    " q  " 40em 
+                    " t  " 10em 
+                    " o  " 25em 
+                    " k  " 45em 
+                    " v  " 40em 
+                    " f  " 2em 
+                    / 1fr
             }
 
             h1 {
@@ -312,54 +288,64 @@
                 padding: 2.5cm;
                 box-shadow: none;
                 font-size: 4.1em;
-                text-align: left;}
+                text-align: left;
+            }
 
             nav {
                 width: 60em;
                 height: 2em;
                 display: flex;
-                box-shadow: 0px 35px #3594B2, 0px 70px #4EA6C2; }
+                box-shadow: 0px 35px #3594B2, 0px 70px #4EA6C2;
+            }
 
             img {
-            width: 900px;
-            height: 600px;
-            margin-left: 2em;}
+                width: 900px;
+                height: 600px;
+                margin-left: 2em;
+            }
 
             main ul {
                 width: 28em;
                 height: 450px;
                 margin-top: 4em;
                 font-size: xxx-large;
-                box-shadow: 30px 40px  #2D6294;}
+                box-shadow: 30px 40px #2D6294;
+            }
 
             h2 {
-                margin-left: 3em;
+                margin-left: 2em;
                 width: 20em;
                 height: 3em;
                 font-size: 2.5em;
-                box-shadow: 20px 20px  #2D6294; }
+                box-shadow: 20px 20px #2D6294;
+            }
 
             h3 {
-                margin-left: 3em;
+                margin-left: 2em;
                 width: 20em;
                 height: 3em;
                 font-size: 2.5em;
-                box-shadow: 20px 20px  #2D6294;}
+                box-shadow: 20px 20px #2D6294;
+            }
 
             .projects {
-                margin-left: 3em;
+                margin-left: 2em;
                 width: 20em;
-                height: 2em;
                 font-size: 2.5em;
-                line-height: 1em;}
+                line-height: 1em;
+            }
 
-        .isha{
-            margin-left: 3em;}
-            .valentines{
-               margin-left: 3em;}
+            .isha {
+                margin-left: 3em;
+            }
+
+            .valentines {
+                margin-left: 3em;
+            }
 
             footer {
-                width: 97em;}
+                width: 97em;
+            }
 
             nav a {
                 background-color: #487FB4;
@@ -368,17 +354,19 @@
                 margin-right: 1em;
                 margin-top: -1em;
                 line-height: 2em;
-                font-size: 1.3em; }
+                font-size: 1.3em;
+            }
 
             .Home {
                 margin-top: -1em;
                 border-radius: 0.3em;
                 padding-left: 1em;
-                padding-right: 1em;}
+                padding-right: 1em;
+            }
 
-.isha-third{
-    margin-left: 3em;
-}
+            .isha-third {
+                margin-left: 3em;
+            }
 
         }
     </style>
